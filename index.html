@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Curviolaz</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #080b09;
+  color: white;
+  padding-bottom: 100px;
+}
+
+header {
+  padding: 25px;
+  background: #101713;
+  border-bottom: 1px solid #1c3828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1ed760;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 35px 20px;
+  background: linear-gradient(135deg,#123c25,#080b09);
+  margin: 20px;
+  border-radius: 18px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #bbb;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #244b32;
+  background: #151c17;
+  color: white;
+  outline: none;
+}
+
+h2 {
+  margin: 25px 20px 15px;
+}
+
+.song-list {
+  padding: 0 20px;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: #141a16;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.song:hover {
+  background: #203a29;
+}
+
+.cover {
+  width: 55px;
+  height: 55px;
+  border-radius: 9px;
+  background: linear-gradient(135deg,#1ed760,#123c25);
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.song-info h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.play-icon {
+  color: #1ed760;
+  font-size: 22px;
+}
+
+.upload {
+  margin: 25px 20px;
+  padding: 20px;
+  background: #141a16;
+  border-radius: 15px;
+}
+
+.upload input {
+  margin-top: 12px;
+  max-width: 100%;
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #101713;
+  border-top: 1px solid #285137;
+  padding: 15px;
+  z-index: 10;
+}
+
+.now-playing {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.now-playing h3 {
+  color: #1ed760;
+  font-size: 15px;
+}
+
+.now-playing p {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+audio {
+  width: 100%;
+  height: 35px;
+  accent-color: #1ed760;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">♫ MUSIC CURVIOLAZ</div>
+  <span>🎧</span>
+</header>
+
+<section class="hero">
+  <h1>Feel The Music.</h1>
+  <p>Temukan lagu favoritmu dan nikmati setiap kenangannya.</p>
+</section>
+
+<div class="search">
+  <input type="text" id="search"
+  placeholder="Cari lagu favorit..."
+  oninput="searchSong()">
+</div>
+
+<h2>🔥 Playlist Favorit</h2>
+
+<div class="song-list" id="songList"></div>
+
+<section class="upload">
+  <h2>📂 Upload Musik</h2>
+  <p>Tambahkan lagu dari perangkatmu sendiri.</p>
+  <input type="file" id="uploadMusic" accept="audio/*" multiple>
+</section>
+
+<div class="player">
+  <div class="now-playing">
+    <h3 id="currentTitle">Music Curviolaz</h3>
+    <p id="currentArtist">Pilih lagu untuk diputar</p>
+  </div>
+  <audio id="audio" controls></audio>
+</div>
+
+<footer>
+  © 2026 MUSIC CURVIOLAZ | All Rights Reserved
+</footer>
+
+<script>
+const songs = [
+  {title:"Hapus Aku", artist:"Nidji", file:""},
+  {title:"Separuh Nafas", artist:"Dewa 19", file:""},
+  {title:"Duka", artist:"Last Child", file:""},
+  {title:"Hidup Untukmu Mati Tanpamu", artist:"NOAH", file:""},
+  {title:"Cinta Terakhir", artist:"Ari Lasso", file:""},
+  {title:"Mungkin Nanti", artist:"NOAH", file:""},
+  {title:"Bagai Bintang di Surga", artist:"Peterpan", file:""},
+  {title:"Aku Milikmu", artist:"Dewa 19", file:""},
+  {title:"Mengenangmu", artist:"Kerispatih", file:""}
+];
+
+const audio = document.getElementById("audio");
+const list = document.getElementById("songList");
+
+function displaySongs(data) {
+  list.innerHTML = "";
+
+  data.forEach(song => {
+    const originalIndex = songs.indexOf(song);
+
+    const item = document.createElement("div");
+    item.className = "song";
+
+    item.innerHTML = `
+      <div class="cover">♫</div>
+      <div class="song-info">
+        <h3>${song.title}</h3>
+        <p>${song.artist}</p>
+      </div>
+      <div class="play-icon">▶</div>
+    `;
+
+    item.onclick = () => playSong(originalIndex);
+    list.appendChild(item);
+  });
+}
+
+function playSong(index) {
+  const song = songs[index];
+
+  if (!song.file) {
+    alert("Upload file lagu terlebih dahulu untuk memutarnya.");
+    return;
+  }
+
+  audio.src = song.file;
+  audio.play();
+
+  document.getElementById("currentTitle").textContent =
+    song.title;
+
+  document.getElementById("currentArtist").textContent =
+    song.artist;
+}
+
+function searchSong() {
+  const keyword = document.getElementById("search")
+    .value.toLowerCase();
+
+  const filtered = songs.filter(song =>
+    song.title.toLowerCase().includes(keyword) ||
+    song.artist.toLowerCase().includes(keyword)
+  );
+
+  displaySongs(filtered);
+}
+
+document.getElementById("uploadMusic")
+.addEventListener("change", function() {
+  Array.from(this.files).forEach(file => {
+    const url = URL.createObjectURL(file);
+
+    songs.push({
+      title: file.name.replace(/\.[^/.]+$/, ""),
+      artist: "Musik Upload",
+      file: url
+    });
+  });
+
+  displaySongs(songs);
+});
+
+displaySongs(songs);
+</script>
+
+</body>
+</html>
