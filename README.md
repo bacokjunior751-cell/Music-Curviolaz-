@@ -1,1 +1,10 @@
 # Music-Curviolaz-
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Ari%2BLasso%2B-%2BCinta%2BTerakhir%2B_%2BLirik%2BLagu%20%5BhurKMuNktVg%5D.mp3)
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Dewa%2019%20-%20Aku%20Milikmu%20Official%20Remastered%20Video.mp3)
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Dewa%2019%20-%20Separuh%20Nafas%20(Official%20Audio).mp3)
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Kerispatih%20-%20Mengenangmu%20(Official%20Music%20Video%20NAGASWARA)%20music.mp3)
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Last%2BChild%2B-%2BDuka%2B(Official%2BLyric%2BVisualizer)%20%5BIqxRMY_UJ5o%5D.mp3)
+![audio alt](
+![audio alt](
+![audio alt](
+![audio alt](
