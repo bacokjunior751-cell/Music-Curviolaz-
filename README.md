@@ -4,7 +4,7 @@
 ![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Dewa%2019%20-%20Separuh%20Nafas%20(Official%20Audio).mp3)
 ![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Kerispatih%20-%20Mengenangmu%20(Official%20Music%20Video%20NAGASWARA)%20music.mp3)
 ![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/852dfc9525f2c9fc5dd013d0b6c3e51c8533eb78/Last%2BChild%2B-%2BDuka%2B(Official%2BLyric%2BVisualizer)%20%5BIqxRMY_UJ5o%5D.mp3)
-![audio alt](
-![audio alt](
-![audio alt](
-![audio alt](
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/2ca45db6346b6925bcc01bf1fb3f888ef2382607/NIDJI%20-%20Hapus%20Aku%20(Official%20Music%20Video).mp3)
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/2ca45db6346b6925bcc01bf1fb3f888ef2382607/NOAH%20-%20Bintang%20di%20Surga%20(Official%20Music%20Video).mp3)
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/2ca45db6346b6925bcc01bf1fb3f888ef2382607/NOAH%20-%20Hidup%20Untukmu%2C%20Mati%20Tanpamu%20(Official%20Audio)%20(1).mp3)
+![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/2ca45db6346b6925bcc01bf1fb3f888ef2382607/Noah%20-%20Mungkin%20Nanti%20Lirik%20Video.mp3)
