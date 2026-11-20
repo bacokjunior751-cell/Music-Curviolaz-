@@ -8,3 +8,12 @@
 ![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/2ca45db6346b6925bcc01bf1fb3f888ef2382607/NOAH%20-%20Bintang%20di%20Surga%20(Official%20Music%20Video).mp3)
 ![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/2ca45db6346b6925bcc01bf1fb3f888ef2382607/NOAH%20-%20Hidup%20Untukmu%2C%20Mati%20Tanpamu%20(Official%20Audio)%20(1).mp3)
 ![audio alt](https://github.com/bacokjunior751-cell/Music-Curviolaz-/blob/2ca45db6346b6925bcc01bf1fb3f888ef2382607/Noah%20-%20Mungkin%20Nanti%20Lirik%20Video.mp3)
+![img alt](artworks-000066174739-tnchju-t1080x1080.jpg)
+![img alt](images(1).jpeg)
+![img alt](images(3).jpeg)
+![img alt](images(5).jpeg)
+![img alt](https://bacokjunior751-cell.github.io/Music-Curviolaz-/)
+![img alt](e850a6af940d44800207bd7cf5d2dbded6ca5c1e.jpeg)
+![img alt](ab67616d0000b2734e1e4f1f00c9db46630cd2a6.jpeg)
+![img alt](ab67616d0000b2733e19058e3db31816a65baf39.jpeg)
+![img alt](
